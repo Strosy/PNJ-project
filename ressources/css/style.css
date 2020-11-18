@@ -41,7 +41,6 @@ nav ul li {
   float: left;  
 }  
 nav ul li a {  
-
   display:block;  
   padding: 1rem 2rem;  
   color: white;  
@@ -65,4 +64,103 @@ nav ul li a:hover {
 
 .carousel-caption p {
   font-size: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  width: 1300px;
+
+  grid-template: 150px 400px 100px 50px repeat(3, 515.6666666666px) / repeat(3, 1fr);
+  margin: auto;
+            
+}
+
+.sous-titre {  
+  font-size: 3rem;
+  grid-area: 1 / 1 / span 1 / span 3;
+  text-align: center;
+}
+
+.sous-titre h3 {
+  margin: 50px;
+}
+
+.img-boxJP {
+  justify-self: center;
+  grid-area: 2 / 1 / span 1 / span 1;
+ 
+}
+
+.img-boxFN {
+  justify-self: center;
+  grid-area: 2 / 2 / span 1 / span 1;
+  border: 1px solid red; 
+}
+
+.img-boxCJ {
+  justify-self: center;
+  grid-area: 2 / 3 / span 1 / span 1;
+
+}
+
+.img-box p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.bio-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* border: 1px solid blue; */
+}
+
+.black-rectangle {
+  background-color: black;
+  grid-area: 3 / 1 / span 1 / span 3;
+  width: 100vw;
+  overflow: visible;
+  justify-self: center;
+  align-items: center;
+}
+
+.black-rectangle p {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.bioJP {
+  grid-area: 5 / 1 / span 1 / span 1;
+  /* border: 2px solid red; */
+}
+
+.bioFN {
+  grid-area: 6 / 1 / span 1 / span 1;
+  /* border: 2px solid red; */
+}
+.bioCJ {
+  grid-area: 7 / 1 / span 1 / span 1;
+  /* border: 2px solid red; */
+}
+
+#JPbio {
+  grid-area: 5 / 2 / span 1 / span 2;
+  /* border: 1px solid green; */
+}
+
+#FNbio {
+  grid-area: 6 / 2 / span 1 / span 2;
+  /* border: 1px solid green; */
+}
+
+#CJbio {
+  grid-area: 7 / 2 / span 1 / span 2;
+  /* border: 2px solid green; */
+}
+.bio p {
+  font-size: 1.2rem;
+  line-height: 1.25;
+  margin: 20px 0px 50px 50px;
 }
