@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+/* Iphone X : 375 x 812/635  */
+/* Ipad Marine : 768 x 1024  */
+/* One plus 5 : 412x732/652 */
+
+
+
+
 /* Universal Styles */
 
 html {
@@ -25,6 +32,18 @@ h1 {
   font-size: 4rem;
   color: black;
   text-align: center;
+}
+/* Media query Iphone X HEADER */
+@media only screen and (max-width:375px) {
+  header {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-weight: 200;
+    font-size: 2rem;
+  }
+
 }
 
 /* Navigation */
@@ -62,6 +81,24 @@ nav ul li a:hover {
   font-size: 2.5rem;
 }
 
+
+/* Media query Iphone X NAV*/
+@media only screen and (max-width:375px) {
+  nav {   
+
+    
+  }  
+  nav ul {
+    
+    
+  }
+  nav ul li {  
+ 
+  }  
+  nav ul li a {  
+
+  }  
+}
 /* Carousel Banner */
 
 .carousel-caption h2 {
